@@ -4,6 +4,8 @@ Calculator running on iOS
 ## Overview
 四則演算が可能なシンプルな電卓です
 
+![screenshot displayed](sc/sc.png)
+
 ## environments
 
 * XCode 8.1
