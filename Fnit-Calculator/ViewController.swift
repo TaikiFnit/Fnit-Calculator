@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
     @IBOutlet weak var harfResultLabel: UILabel!
     
     @IBOutlet weak var resultLabel: UILabel!
@@ -19,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     /* 演算子が押されたときの処理 */
@@ -30,6 +32,7 @@ class ViewController: UIViewController {
             // 左辺の値を確定し、
             leftOperand = resultLabel.text!
             // 次の値を受け付ける
+
             resultLabel.text = ""
         }
         
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
             harfResultLabel.text = leftOperand! + " " + centerOperator + " " +  rightOperand!
         }
     }
-    
+
     /* 数字が押されたときの処理 */
     @IBAction func tappedNum(_ sender: UIButton) {
         
@@ -83,13 +86,25 @@ class ViewController: UIViewController {
         rightOperand = ""
         centerOperator = ""
         resultLabel.text = "0"
+        harfResultLabel.text = "0"
     }
     
-    func calculate() {
+    
+    /* delete buttonが押されたときの処理 */
+    @IBAction func tappedDel(_ sender: UIButton) {
+        let targetNum:String = resultLabel.text!
+        let index = targetNum.index(targetNum.endIndex, offsetBy: -1)
         
-        print (leftOperand)
-        print (rightOperand)
-        print (centerOperator)
+        // 1文字削除する
+        resultLabel.text = targetNum.substring(to: index)
+        
+        if resultLabel.text == "" {
+            resultLabel.text = "0"
+        }
+    }
+    
+    
+    func calculate() {
         
         if(leftOperand! != "" && centerOperator != "" && rightOperand! != "") {
             // calc!

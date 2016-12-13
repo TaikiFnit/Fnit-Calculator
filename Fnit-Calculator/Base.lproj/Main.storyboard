@@ -46,11 +46,11 @@
                                                 <rect key="frame" x="80" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.62352941179999999" green="0.6588235294" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="+/-">
+                                                <state key="normal" title="DEL">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMP-7Q-Elh"/>
+                                                    <action selector="tappedDel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxv-rb-Kij"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlN-wy-7CI">
