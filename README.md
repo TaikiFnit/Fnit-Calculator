@@ -4,7 +4,7 @@ Calculator running on iOS
 ## Overview
 四則演算が可能なシンプルな電卓です
 
-<img src="sc/sc.png " width="640">
+<img src="sc/sc.png " width="320">
 
 ## environments
 
