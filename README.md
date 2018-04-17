@@ -2,7 +2,8 @@
 Calculator running on iOS
 
 ## Overview
-四則演算が可能なシンプルな電卓です
+四則演算が可能なシンプルな電卓です.
+[スパルタキャンプSwift編](http://hachimantai.spartacamp.jp/)の完成品サンプルとして作成.
 
 <img src="sc/sc.png " width="320">
 
